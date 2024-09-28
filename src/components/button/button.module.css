@@ -1,0 +1,41 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.button.stone {
+  background: var(--stone-200);
+}
+.button.stone:hover,
+.button.stone:active,
+.button.stone:focus {
+  background: var(--stone-300);
+}
+
+.button.transparent {
+  background: none;
+}
+.button.transparent:hover,
+.button.transparent:active,
+.button.transparent:focus {
+  background: var(--stone-200);
+}
+
+.button.red {
+  background: var(--red-500);
+  color: var(--stone-100);
+}
+.button.red:hover,
+.button.red:active,
+.button.red:focus {
+  background: var(--red-600);
+}

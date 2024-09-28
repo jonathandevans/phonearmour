@@ -1,0 +1,28 @@
+.phoneContainer {
+  position: relative;
+  pointer-events: none;
+  z-index: 25;
+  overflow: hidden;
+}
+
+.phone {
+  pointer-events: none;
+  z-index: 15;
+  user-select: none;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.imageContainer {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+}
+
+.image {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+}
