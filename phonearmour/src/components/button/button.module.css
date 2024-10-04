@@ -14,6 +14,7 @@
 
 .button.stone {
   background: var(--stone-200);
+  color: var(--stone-900);
 }
 .button.stone:hover,
 .button.stone:active,
@@ -23,6 +24,7 @@
 
 .button.transparent {
   background: none;
+  color: var(--stone-900);
 }
 .button.transparent:hover,
 .button.transparent:active,

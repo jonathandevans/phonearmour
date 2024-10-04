@@ -13,8 +13,9 @@
   z-index: 100;
 }
 
-.header h3 {
-  cursor: default;
+.header a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .header h3 span {

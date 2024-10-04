@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
-import { Header } from "@/components/header/header";
-import { Footer } from "@/components/footer/footer";
+import { Header } from "../components/header/header";
+import { Footer } from "../components/footer/footer";
 import "./globals.css";
 
 // Font Awesome Config
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Provider } from "../components/provider/provider";
 config.autoAddCss = false;
 
 // Fonts
@@ -28,7 +29,7 @@ const RootLayout = ({
       <body className={font.className}>
         <Header />
         <main>
-          {children}
+          <Provider>{children}</Provider>
         </main>
         <Footer />
       </body>

@@ -1,0 +1,50 @@
+.panel {
+  display: flex;
+  background: var(--stone-200);
+  border-radius: 16px;
+  width: 95%;
+  max-width: 64rem;
+  margin: 2rem auto;
+  height: 60vh;
+  border: 2px solid var(--stone-300);
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.panel.hover {
+  background: var(--stone-300);
+  border: 2px solid var(--stone-400);
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inner p,
+.inner .icon {
+  margin: 0;
+}
+
+.inner p span {
+  font-weight: 800;
+}
+
+.inner .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.inner .small {
+  font-size: 0.8rem;
+}
+
+.inner:hover {
+  cursor: pointer;
+}

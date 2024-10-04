@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./page.module.css";
 import { faArrowRight, faCheck, faStar } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "@/components/button/button";
-import { Slideshow } from "@/components/slideshow/slideshow";
+import { Button } from "../components/button/button";
+import { Slideshow } from "../components/slideshow/slideshow";
 
 const Page = () => {
   return (
@@ -86,7 +86,7 @@ const Page = () => {
                 weeks. Love it."
               </p>
               <div className={styles.author}>
-                <img src="/test-1.jpg" />
+                <img src="/user-1.jpg" />
                 <div>
                   <p className={styles.name}>Charlie</p>
                   <p>
@@ -113,7 +113,7 @@ const Page = () => {
                 . I dig it."
               </p>
               <div className={styles.author}>
-                <img src="/test-2.png" />
+                <img src="/user-2.png" />
                 <div>
                   <p className={styles.name}>Emma</p>
                   <p>

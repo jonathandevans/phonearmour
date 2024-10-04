@@ -1,4 +1,4 @@
-import { PRODUCTS_PRICES } from "@/config/products";
+import { PRODUCTS_PRICES } from "../config/products";
 
 export const COLOURS = [
   {label: "Black", value: "black", tw: "zinc-900"},
