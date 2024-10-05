@@ -23,7 +23,7 @@ const Page = () => {
               High-quality, durable material
             </li>
             <li>
-              <FontAwesomeIcon icon={faCheck} className={styles.icon} /> 1 year
+              <FontAwesomeIcon icon={faCheck} className={styles.icon} /> 2 year
               print guarantee
             </li>
             <li>
