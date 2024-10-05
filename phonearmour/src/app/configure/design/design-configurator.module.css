@@ -1,0 +1,258 @@
+.handle {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: var(--stone-50);
+  border-radius: 50%;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+  position: relative;
+  height: 40rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.design {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px dashed var(--stone-300);
+  padding: 1.5rem;
+  background: var(--stone-200);
+}
+
+.imageContainer {
+  position: relative;
+  width: 15rem;
+  aspect-ratio: 896 / 1831;
+}
+
+.phoneCase {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.colour {
+  border-radius: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 40;
+  pointer-events: none;
+}
+
+.phoneImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.background {
+  border-radius: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  box-shadow: 0 0 0 40rem rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+}
+
+.moveable {
+  position: absolute;
+  z-index: 45;
+  border: 3px solid var(--red-500);
+}
+
+.userImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.userImage {
+  pointer-events: none;
+}
+
+.customise {
+  display: grid;
+  grid-template-rows: 9fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  height: 100%;
+  max-height: 40rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+.option {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.options h2 {
+  margin-bottom: 0;
+}
+
+.break {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid var(--stone-400);
+  margin: 1rem 0;
+  display: block;
+}
+
+.options h4 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.colourButtons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.blackButton {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--stone-900);
+  border: none;
+  cursor: pointer;
+  border: 2px solid var(--stone-200);
+}
+
+.blackButton.highlight {
+  box-shadow: 0 0 0 2px var(--stone-900);
+}
+
+.blueButton {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--blue-950);
+  border: none;
+  cursor: pointer;
+  border: 2px solid var(--stone-200);
+}
+
+.blueButton.highlight {
+  box-shadow: 0 0 0 2px var(--blue-950);
+}
+
+.redButton {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--red-950);
+  border: none;
+  cursor: pointer;
+  border: 2px solid var(--stone-200);
+}
+
+.redButton.highlight {
+  box-shadow: 0 0 0 2px var(--red-950);
+}
+
+.select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid var(--stone-400);
+  border-radius: 8px;
+  background: var(--stone-100);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.materialButtons,
+.finishButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.materialButton,
+.finishButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: var(--stone-100);
+  cursor: pointer;
+  border: 2px solid var(--stone-400);
+  font-size: 0.9rem;
+}
+
+.materialButton.highlight,
+.finishButton.highlight {
+  border: 2px solid var(--red-500);
+  font-weight: 600;
+}
+
+.materialButton p,
+.finishButton p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 0;
+  border-top: 1px solid var(--stone-300);
+}
+
+.checkout h3 {
+  width: fit-content;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkout button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: var(--red-500);
+  color: var(--stone-50);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 64rem) {
+  .panel {
+    grid-template-columns: 6fr 3fr;
+  }
+}

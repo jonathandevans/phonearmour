@@ -1,0 +1,99 @@
+.preview {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 1rem;
+  gap: 2.5rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.text h1 {
+  margin: 0;
+  width: 100%;
+}
+
+.text .subtext {
+  margin: 0;
+  width: 100%;
+  color: var(--stone-700);
+  font-size: 0.9rem;
+}
+
+.break {
+  width: 100%;
+  border-top: 1px solid var(--red-500);
+  margin: 2rem 0;
+}
+
+.attri {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.list h3 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.list ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--stone-200);
+  padding: 1.5rem 0.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--stone-300);
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.pricing p {
+  margin: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.pricing .break {
+  width: 80%;
+  border-top: 1px solid var(--stone-400);
+  margin: 0.5rem 0;
+}
+
+.pricing p.bold {
+  font-weight: 700;
+}
+
+.checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem !important;
+  padding-bottom: 0;
+  font-size: 1.05rem !important;
+  border-top: 1px solid var(--stone-300);
+  align-self: flex-end;
+  margin-top: 1rem;
+}
+
+.checkout .icon {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}

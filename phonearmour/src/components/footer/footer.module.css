@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  background: var(--red-500);
+}
+
+.footer h3,
+.footer p {
+  color: var(--stone-100);
+  margin: 0;
+}
