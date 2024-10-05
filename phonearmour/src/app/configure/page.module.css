@@ -1,0 +1,11 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5rem;
+  width: 95%;
+  max-width: 70rem;
+  gap: 1rem;
+}
