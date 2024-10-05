@@ -1,50 +1,58 @@
 .panel {
-  display: flex;
-  background: var(--stone-200);
-  border-radius: 16px;
-  width: 95%;
-  max-width: 64rem;
-  margin: 2rem auto;
-  height: 60vh;
-  border: 2px solid var(--stone-300);
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s;
-}
-
-.panel.hover {
-  background: var(--stone-300);
-  border: 2px solid var(--stone-400);
-}
-
-.inner {
   width: 100%;
-  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 0.5rem;
+  background: var(--stone-200);
+  border-radius: 12px;
+  border: 1px solid var(--stone-300);
+  height: 60vh;
+  max-height: 40rem;
+  min-height: 20rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.inner p,
-.inner .icon {
+.icon {
+  font-size: 3rem;
+  color: var(--stone-900);
+}
+
+.panel p span {
+  font-weight: 700;
+}
+
+.small {
   margin: 0;
-}
-
-.inner p span {
-  font-weight: 800;
-}
-
-.inner .icon {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-.inner .small {
   font-size: 0.8rem;
 }
 
-.inner:hover {
+.dropzone {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
   cursor: pointer;
+}
+
+.text {
+  margin-bottom: 0;
+}
+
+.spinner {
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

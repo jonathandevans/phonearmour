@@ -1,0 +1,72 @@
+.backdrop {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100lvw;
+  height: 100lvh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.popup {
+  display: flex;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  background: var(--stone-100);
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  z-index: 101;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup h2 {
+  font-size: 1.5rem;
+  color: var(--stone-950);
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.popup p {
+  font-size: 1rem;
+  color: var(--stone-900);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.popup p span {
+  font-weight: 700;
+}
+
+.popup .buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.login {
+  width: 100%;
+  background: var(--stone-200);
+  padding: 0.5rem;
+  border-radius: 8px;
+  color: var(--stone-900);
+  text-decoration: none;
+}
+
+.register {
+  width: 100%;
+  background: var(--red-500);
+  padding: 0.5rem;
+  color: var(--stone-100);
+  border-radius: 8px;
+  text-decoration: none;
+}

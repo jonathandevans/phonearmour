@@ -1,9 +1,13 @@
-import { PRODUCTS_PRICES } from "../config/products";
+// bg-stone-900 border-stone-900
+// bg-blue-950 border-blue-950
+// bg-red-950 border-red-950
+
+import { PRODUCTS_PRICES } from "@/config/products";
 
 export const COLOURS = [
-  {label: "Black", value: "black", tw: "zinc-900"},
+  {label: "Black", value: "black", tw: "stone-900"},
   {label: "Blue", value: "blue", tw: "blue-950"},
-  {label: "Rose", value: "rose", tw: "rose-950"}
+  {label: "Red", value: "red", tw: "red-950"}
 ] as const;
 
 export const MODELS = {
